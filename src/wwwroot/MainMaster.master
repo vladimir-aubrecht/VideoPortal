@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>--%>
+    <style type="text/css" media="screen">
+
+        td
+        {
+        	text-align: center;
+        	vertical-align: top;
+        }
+        
+        a
+        {
+        	font-size: smaller;
+        	text-decoration: none;
+        }
+        
+        .FolderDiv
+        {
+            text-align: center;
+            float: left;
+            margin: 10px 0px 10px 0px;
+        }
+        
+        .FolderDiv a
+        {
+            margin: 0 0 0 0;
+        }
+        
+        .FolderDiv img
+        {
+            margin: 0 0 0 0;
+            border-style: solid;
+            border-color: Black;
+            border-width: 2px;
+        }
+        
+        .FolderDiv div
+        {
+            text-align: center;
+            margin: 0 0 0 0;
+            height: 26px;
+        }
+        
+        body
+        {
+        	background-color: #DDDDDD;
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
